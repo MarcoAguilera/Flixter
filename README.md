@@ -7,7 +7,6 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 ## Flixter Part 1
 
 ### User Stories
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after after checking off completed user stories)
 
 #### REQUIRED (10pts)
 - [x] (2pts) User sees an app icon on the home screen and a styled launch screen.
@@ -15,4 +14,4 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 - [x] (3pts) User can view the movie poster image for each movie.
 
 ### App Walkthough GIF
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="ezgif.com-video-to-gif (1).gif" width=250><br>
