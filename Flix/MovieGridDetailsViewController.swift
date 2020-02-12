@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MovieGridDetailsViewController: UIViewController {
+class MovieGridDetailsViewController: UIViewController, UIGestureRecognizerDelegate{
 
     @IBOutlet weak var synopsisLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -34,17 +34,30 @@ class MovieGridDetailsViewController: UIViewController {
         let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)!
         backdropView
             .af_setImage(withURL: backdropUrl)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(viewTapped(sender:)))
+        tap.delegate = self
+        posterView.addGestureRecognizer(tap)
+        
+        
+    }
+    @objc func viewTapped(sender: UITapGestureRecognizer) {
+        print("View Tapped")
+        performSegue(withIdentifier: "trailerSegue", sender: nil)
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let trailerViewController = segue.destination as! TrailerViewController
+        
+        trailerViewController.movie = movie
     }
-    */
+    
 
 }

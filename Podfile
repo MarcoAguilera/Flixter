@@ -7,6 +7,7 @@ target 'Flix' do
 
   # Pods for Flix
   pod "AlamofireImage"  
+  pod "YouTubePlayer-Swift"
 
   target 'FlixTests' do
     inherit! :search_paths

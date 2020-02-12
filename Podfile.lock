@@ -2,19 +2,23 @@ PODS:
   - Alamofire (4.9.1)
   - AlamofireImage (3.6.0):
     - Alamofire (~> 4.9)
+  - YouTubePlayer-Swift (1.0)
 
 DEPENDENCIES:
   - AlamofireImage
+  - YouTubePlayer-Swift
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
+    - YouTubePlayer-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
 
-PODFILE CHECKSUM: 802e8c780e004c5210eed60806673861ba5e267d
+PODFILE CHECKSUM: 69e8018e1e42d63998fa326ee81568f244c7e1fc
 
 COCOAPODS: 1.8.4
